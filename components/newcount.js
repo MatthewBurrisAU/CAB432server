@@ -1,4 +1,4 @@
-export default function NewCount(count){
+function NewCount(count){
 
     req.db.distinct()
     .from("data")

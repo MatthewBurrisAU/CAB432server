@@ -9,13 +9,13 @@ router.get('/', function(req, res, next) {
   if (process.env.NODE_ENV === "development"){
     res.status(200).json(
       {
-        count: "prod"
+        count: "Dev, couldn't get to work :("
       }
     );
   } else{
       res.status(200).json(
         {
-          "count": r
+          "count": "Prod, couldn't get to work :("
         }
       )
   }

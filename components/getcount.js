@@ -1,4 +1,4 @@
-export default function GetCount(){
+function GetCount(){
 
     req.db.distinct()
     .from("data")

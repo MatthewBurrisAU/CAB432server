@@ -28,11 +28,12 @@ async function requestAPI(name) {
 
 router.get('/', function(req, res, next) { 
   if (process.env.NODE_ENV === "development"){
+    
     res.status(200).json(
       transform(dummyjson)
     )
   } else{
-    requestAPI(req.query.id)
+    requestAPI(req.query.pokemon)
     .then(r => 
       res.status(200).json(
         r
