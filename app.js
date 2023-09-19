@@ -5,9 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 
-const options = require('./knexfile')
-const knex = require('knex')(options)
-
 var indexRouter = require('./routes/index');
 var getcoloursRouter = require ('./routes/getcolours');
 var getpokemonRouter = require('./routes/getpokemon');
